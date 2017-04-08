@@ -80,8 +80,9 @@
 [fetch]
   prune = true
 
-[include]
-  path = ~/.gitconfig.local
+[user]
+  name = dd di cesare
+  email = didi@posteo.net
 
 # URL shorthands
 
