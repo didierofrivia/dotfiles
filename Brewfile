@@ -51,6 +51,7 @@ cask 'shuttle'
 cask 'istat-menus'
 cask 'licecap'
 cask 'libreoffice'
+cask 'flux'
 
 ## Internet
 cask 'firefox'
