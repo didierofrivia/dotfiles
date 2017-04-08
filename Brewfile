@@ -4,17 +4,17 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
-# Install ZSH
+## ZSH
 brew 'zsh'
 brew 'zsh-completions'
 
-# Install GNU core utilities (those that come with macOS are outdated)
+## GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
 
-# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+## GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew 'findutils'
 
-# Install Binaries
+## Binaries
 brew 'awscli'
 brew 'git'
 brew 'hub'
@@ -23,49 +23,79 @@ brew 'mas'
 brew 'trash'
 brew 'wget'
 
-# Development
+## Development
 brew 'node'
-brew yarn
-brew mysql
-brew postgresql
-brew redis
-brew heroku-toolbelt
+brew 'yarn'
+brew 'mysql'
+brew 'postgresql'
+brew 'redis'
+brew 'heroku-toolbelt'
+brew 'autojump'
+brew 'exercism'
+brew 's3cmd'
 
 
 # Apps
-cask 'aerial'
+
+## Media
+cask 'vlc'
+cask 'quik'
+cask 'spotify'
+cask 'sonos'
+
+## Tools
 cask 'alfred'
-cask 'caffeine'
+cask 'iterm2'
+cask 'shuttle'
+cask 'istat-menus'
+cask 'licecap'
+cask 'libreoffice'
+
+## Internet
 cask 'firefox'
 cask 'google-chrome'
-cask 'gpgtools'
-cask 'iterm2'
-cask 'quip'
-cask 'sequel-pro'
-cask 'shuttle'
-cask 'slack'
-cask 'tower'
 cask 'transmit'
-cask 'vlc'
+cask 'slack'
 
-# Quicklook
+## Security
+cask 'gpgtools'
+cask 'viscosity'
+cask 'tunnelblick'
+cask 'encryptr'
+cask 'spideroakone'
+
+## Development
+cask 'docker'
+cask 'atom'
+cask 'rubymine'
+cask 'android-file-transfer'
+cask 'android-platform-tools'
+cask 'android-sdk'
+cask 'sequel-pro'
+cask 'psequel'
+
+## Misc
+cask 'aerial'
+
+## Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 
-# Fonts
+## Fonts
 cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
-# Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
+
+# Mac App Store apps
+mas 'Dash', id: 458034879
+mas 'Telegram', id: 747648890
 mas 'Deckset', id: 847496013
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
+mas 'Ehon', id: 402485111
+mas 'Deckset', id: 847496013
 mas 'Sketch', id: 402476602
+mas 'Tweetbot', id: 557168941
