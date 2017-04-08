@@ -26,6 +26,8 @@ brew 'wget'
 
 ## Development
 brew 'node'
+brew 'rbenv'
+brew 'ruby-build'
 brew 'yarn'
 brew 'mysql'
 brew 'postgresql'
