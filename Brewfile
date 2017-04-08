@@ -20,6 +20,7 @@ brew 'git'
 brew 'hub'
 brew 'tree'
 brew 'mas'
+brew 'mackup'
 brew 'trash'
 brew 'wget'
 
