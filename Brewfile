@@ -23,6 +23,7 @@ brew 'mas'
 brew 'mackup'
 brew 'trash'
 brew 'wget'
+brew 'openssl'
 
 ## Development
 brew 'node'
@@ -36,6 +37,7 @@ brew 'heroku-toolbelt'
 brew 'autojump'
 brew 'exercism'
 brew 's3cmd'
+brew 'openshift-cli'
 
 
 # Apps
@@ -77,6 +79,7 @@ cask 'android-platform-tools'
 cask 'android-sdk'
 cask 'sequel-pro'
 cask 'psequel'
+cask 'vagrant'
 
 ## Misc
 cask 'aerial'
