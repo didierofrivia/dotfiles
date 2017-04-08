@@ -5,7 +5,7 @@ export DOTFILES=$HOME/dotfiles
 export ZSH=$HOME/.oh-my-zsh
 
 # oh-my-zsh theme
-ZSH_THEME="taybalt-custom"
+ZSH_THEME="pygmalion"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
