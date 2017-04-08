@@ -61,6 +61,9 @@ brew bundle
 fancy_echo "Setting Zsh as default..."
 chsh -s $(which zsh)
 
+# Install Oh-My-Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Install yarn globally
 fancy_echo "Installing Yarn globally..."
 npm install --global yarn
