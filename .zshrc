@@ -73,3 +73,18 @@ export LANG=en_US.UTF-8
 
 # AutoJump
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# lunchy
+LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+  . $LUNCHY_DIR/lunchy-completion.zsh
+fi
+
+# execute local node modules bin
+alias npm-exec='PATH=$(npm bin):$PATH'
+alias karma='npm-exec karma'
+alias poi='npm-exec poi'
