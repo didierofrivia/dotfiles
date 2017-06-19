@@ -49,8 +49,8 @@
 	new = green # additions
 
 [color "status"]
-	added = yellow
-	changed = green
+	added = green
+	changed = yellow
 	untracked = cyan
 
 [commit]
@@ -71,7 +71,7 @@
   ff = only
 
 [push]
-	default = matching
+	default = current
 	followTags = true
   
 [commit]
