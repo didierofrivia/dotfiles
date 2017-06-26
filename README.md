@@ -11,10 +11,11 @@ Basically a big shout for the great work and dedication from all the devs listed
 1. Format and Update macOS to the latest version with the App Store
 2. Install Xcode from the App Store, open it and accept the license agreement
 3. Install macOS Command Line Tools by running `xcode-select --install`
-4. Get the tarball
+4. Clone the repo
 ```bash
-cd; curl -#L https://github.com/ddcesare/dotfiles/tarball/master | tar -xzv --strip-components 1 --exclude={README.md,LICENSE-MIT.txt}
+cd; git clone https://github.com/ddcesare/dotfiles.git
 ```
+  * `cd dotfiles`
   * Run `instal.sh`
 5. Get your mackup backup from you favourite storage service, and run `mackup restore`
 
