@@ -66,8 +66,8 @@ fancy_echo "Installing Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install yarn globally
-fancy_echo "Installing Yarn globally..."
-npm install --global yarn
+fancy_echo "Installing Yarn globally and jspm..."
+npm install -g yarn jspm
 
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
@@ -90,6 +90,12 @@ gem_install_or_update 'bundler'
 number_of_cores=$(sysctl -n hw.ncpu)
 bundle config --global jobs $((number_of_cores - 1))
 
+# Install lunchy gem
+gem install lunchy
+
+# Lunchy redis and mysql detection
+ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 
 # Set macOS preferences, originally from https://github.com/mathiasbynens/dotfiles
 fancy_echo "Set macOS preferences ..."
