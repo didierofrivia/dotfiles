@@ -61,10 +61,6 @@ brew bundle
 fancy_echo "Setting Zsh as default..."
 chsh -s $(which zsh)
 
-# Install Oh-My-Zsh
-fancy_echo "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 # Install yarn globally
 fancy_echo "Installing Yarn globally and jspm..."
 npm install -g yarn jspm
@@ -104,3 +100,7 @@ ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
 # Set macOS preferences, originally from https://github.com/mathiasbynens/dotfiles
 fancy_echo "Set macOS preferences ..."
 source .macos
+
+# Install Oh-My-Zsh
+fancy_echo "Installing Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
