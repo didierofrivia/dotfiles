@@ -90,6 +90,10 @@ gem_install_or_update 'bundler'
 number_of_cores=$(sysctl -n hw.ncpu)
 bundle config --global jobs $((number_of_cores - 1))
 
+# Install rmagick and capybara-webkit
+gem install rmagick -v '2.15.3'
+gem install capybara-webkit
+
 # Install lunchy gem
 gem install lunchy
 
