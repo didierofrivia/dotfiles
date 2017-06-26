@@ -85,10 +85,12 @@ cask 'sequel-pro'
 cask 'psequel'
 cask 'vagrant'
 cask 'dash'
+cask 'virtualbox'
 
 ## Misc
 cask 'aerial'
 cask 'ehon'
+cask 'spectacle'
 
 ## Quicklook
 cask 'qlcolorcode'
