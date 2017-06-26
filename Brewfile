@@ -29,7 +29,7 @@ brew 'openssl'
 brew 'node'
 brew 'rbenv'
 brew 'ruby-build'
-brew qt5 --with-qtwebkit
+brew 'qt5', args: ['--with-qtwebkit']
 brew 'mysql'
 brew 'postgresql'
 brew 'redis'
