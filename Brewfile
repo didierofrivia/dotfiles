@@ -38,6 +38,9 @@ brew 'autojump'
 brew 'exercism'
 brew 's3cmd'
 brew 'openshift-cli'
+brew 'htop'
+brew 'sphinx'
+brew 'dnsmasq'
 
 
 # Apps
@@ -62,6 +65,7 @@ cask 'firefox'
 cask 'google-chrome'
 cask 'transmit'
 cask 'slack'
+cask 'skype'
 
 ## Security
 cask 'gpgtools'
@@ -80,9 +84,11 @@ cask 'android-sdk'
 cask 'sequel-pro'
 cask 'psequel'
 cask 'vagrant'
+cask 'dash'
 
 ## Misc
 cask 'aerial'
+cask 'ehon'
 
 ## Quicklook
 cask 'qlcolorcode'
@@ -92,17 +98,14 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 ## Fonts
-cask 'font-sauce-code-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 
 # Mac App Store apps
-mas 'Dash', id: 458034879
+mas 'Xcode', id: 497799835
 mas 'Telegram', id: 747648890
 mas 'Deckset', id: 847496013
-mas 'Ehon', id: 402485111
-mas 'Deckset', id: 847496013
 mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+mas 'Twitter', id: 409789998
