@@ -29,7 +29,9 @@ brew 'openssl'
 brew 'node'
 brew 'rbenv'
 brew 'ruby-build'
+brew 'pv'
 brew 'qt5', args: ['--with-qtwebkit']
+brew 'imagemagick'
 brew 'mysql'
 brew 'postgresql'
 brew 'redis'
@@ -39,7 +41,7 @@ brew 'exercism'
 brew 's3cmd'
 brew 'openshift-cli'
 brew 'htop'
-brew 'sphinx'
+brew 'sphinx', args ['--with-mysql']
 brew 'dnsmasq'
 
 
