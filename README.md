@@ -21,4 +21,4 @@ cd; git clone https://github.com/didierofrivia/dotfiles.git
 
 ## Feedback
 
-Any suggestions are welcome! Give me a shout at [@ddcsare](https://twitter.com/ddcsare) and feel free to open an [issue](https://github.com/ddcesare/dotfiles/issues/new).
+Any suggestions are welcome! Give me a shout at [@didierofrivia](https://twitter.com/didierofrivia) and feel free to open an [issue](https://github.com/didierofrivia/dotfiles/issues/new).
