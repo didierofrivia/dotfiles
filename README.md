@@ -13,7 +13,7 @@ Basically a big shout for the great work and dedication from all the devs listed
 3. Install macOS Command Line Tools by running `xcode-select --install`
 4. Clone the repo
 ```bash
-cd; git clone https://github.com/ddcesare/dotfiles.git
+cd; git clone https://github.com/didierofrivia/dotfiles.git
 ```
   * `cd dotfiles`
   * Run `instal.sh`
