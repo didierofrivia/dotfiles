@@ -99,7 +99,7 @@ alias jest='npm-exec jest'
 alias jspm='npm-exec jspm'
 
 # Autocomplete fish-like zsh plugin
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #eval "$(ssh-agent -s)"
 #ssh-add -k ~/.ssh/id_rsa
