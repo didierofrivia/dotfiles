@@ -68,6 +68,7 @@ cask 'google-chrome'
 cask 'transmit'
 cask 'slack'
 cask 'skype'
+cask 'blue-jeans'
 
 ## Security
 cask 'gpgtools'
