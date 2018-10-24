@@ -33,12 +33,11 @@ brew 'node'
 brew 'rbenv'
 brew 'ruby-build'
 brew 'pv'
-brew 'qt@5.5', link: true
+brew 'qt5', link: true
 brew 'mysql@5.7', restart_service: true, link: true, conflicts_with: ['mysql']
 brew 'imagemagick@6', link: true
 brew 'postgresql'
 brew 'redis'
-brew 'heroku-toolbelt'
 brew 'autojump'
 brew 'exercism'
 brew 's3cmd'
@@ -71,7 +70,7 @@ cask 'skype'
 cask 'blue-jeans'
 
 ## Security
-cask 'gpgtools'
+cask 'gpg-suite'
 cask 'viscosity'
 cask 'tunnelblick'
 cask 'encryptr'
@@ -88,7 +87,6 @@ cask 'dash'
 
 ## Misc
 cask 'aerial'
-cask 'ehon'
 cask 'spectacle'
 
 ## Quicklook
