@@ -90,8 +90,8 @@ bundle config --global jobs $((number_of_cores - 1))
 gem install lunchy
 
 # Lunchy redis and mysql detection
-ln -sfv /usr/local/opt/mysql*/*.plist ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/mysql*/*.plist ~/Library/LaunchAgents/
+ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents/
 
 # Set macOS preferences, originally from https://github.com/mathiasbynens/dotfiles
 fancy_echo "Set macOS preferences ..."
