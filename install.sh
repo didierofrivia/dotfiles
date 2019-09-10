@@ -61,10 +61,6 @@ brew bundle
 fancy_echo "Setting Zsh as default..."
 chsh -s $(which zsh)
 
-# Install yarn globally
-fancy_echo "Installing Yarn globally"
-npm install -g yarn
-
 fancy_echo "Configuring Ruby ..."
 find_latest_ruby() {
   rbenv install -l | grep -v - | tail -1 | sed -e 's/^ *//'
