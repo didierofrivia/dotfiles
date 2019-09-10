@@ -90,8 +90,8 @@ ln -sfv /usr/local/opt/mysql*/*.plist ~/Library/LaunchAgents/
 ln -sfv /usr/local/opt/redis/*.plist ~/Library/LaunchAgents/
 
 # Set macOS preferences, originally from https://github.com/mathiasbynens/dotfiles
-fancy_echo "Set macOS preferences ..."
-source .macos
+# fancy_echo "Set macOS preferences ..."
+# source .macos
 
 # Install Oh-My-Zsh
 fancy_echo "Installing Oh My Zsh..."
