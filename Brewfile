@@ -43,7 +43,7 @@ brew 'exercism'
 brew 's3cmd'
 brew 'openshift-cli'
 brew 'htop'
-brew 'sphinx', args: ['with-mysql@5.7']
+brew 'sphinx --with-mysql@5.7'
 
 
 # Apps
