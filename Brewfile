@@ -68,6 +68,7 @@ cask 'transmit'
 cask 'slack'
 cask 'skype'
 cask 'blue-jeans'
+cask 'telegram'
 
 ## Security
 cask 'gpg-suite'
@@ -100,10 +101,3 @@ cask 'qlstephen'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
-
-
-# Mac App Store apps
-mas 'Xcode', id: 497799835
-mas 'Telegram', id: 747648890
-mas 'Deckset', id: 847496013
-mas 'Twitter', id: 409789998
