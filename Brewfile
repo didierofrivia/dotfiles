@@ -27,6 +27,7 @@ brew 'openssl'
 brew 'gs'
 brew 'pkg-config'
 brew 'ag'
+brew 'lsd'
 
 ## Development
 brew 'node'
@@ -44,6 +45,8 @@ brew 's3cmd'
 brew 'openshift-cli'
 brew 'htop'
 brew 'sphinx --with-mysql@5.7'
+brew 'elm'
+brew 'heroku'
 
 
 # Apps
