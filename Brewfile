@@ -44,9 +44,8 @@ brew 'exercism'
 brew 's3cmd'
 brew 'openshift-cli'
 brew 'htop'
-brew 'sphinx --with-mysql@5.7'
 brew 'elm'
-brew 'heroku'
+brew 'heroku/brew/heroku'
 
 
 # Apps
