@@ -85,12 +85,9 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias karma='npm-exec karma'
-alias poi='npm-exec poi'
-alias sao='npm-exec sao'
 alias flow='npm-exec flow'
 alias eslint='npm-exec eslint'
 alias jest='npm-exec jest'
-alias jspm='npm-exec jspm'
 
 # Autocomplete fish-like zsh plugin
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
