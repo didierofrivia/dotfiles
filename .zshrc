@@ -78,12 +78,6 @@ export LANG=en_US.UTF-8
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# lunchy
-LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
-fi
-
 # heroku
 export PATH="/usr/local/heroku/bin:$PATH"
 
