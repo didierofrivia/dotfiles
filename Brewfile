@@ -7,6 +7,7 @@ tap 'homebrew/bundle'
 ## ZSH
 brew 'zsh'
 brew 'zsh-completions'
+brew 'zsh-autosuggestions'
 
 ## GNU core utilities (those that come with macOS are outdated)
 brew 'coreutils'
