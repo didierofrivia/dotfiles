@@ -90,7 +90,7 @@ alias eslint='npm-exec eslint'
 alias jest='npm-exec jest'
 
 # Autocomplete fish-like zsh plugin
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #eval "$(ssh-agent -s)"
 #ssh-add -k ~/.ssh/id_rsa
