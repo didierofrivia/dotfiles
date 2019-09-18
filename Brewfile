@@ -88,6 +88,7 @@ cask 'rubymine'
 cask 'sequel-pro'
 cask 'psequel'
 cask 'dash'
+cask 'chromedriver'
 
 ## Misc
 cask 'aerial'
