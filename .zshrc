@@ -103,5 +103,10 @@ export LDFLAGS="-L/usr/local/opt/openssl/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
+# 3scale Porta
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export APICAST_REGISTRY_URL=https://apicast-staging.proda.3sca.net/policies
+export UNICORN_WORKERS=8
+alias railss='rails s -b 0.0.0.0'
 #eval "$(ssh-agent -s)"
 #ssh-add -k ~/.ssh/id_rsa
