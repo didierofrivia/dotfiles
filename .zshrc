@@ -49,7 +49,7 @@ ZSH_CUSTOM=$DOTFILES
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras github npm autojump)
+plugins=(git git-extras github npm autojump zsh-autosuggestions)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
@@ -91,9 +91,6 @@ alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
-
-# Autocomplete fish-like zsh plugin
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #eval "$(ssh-agent -s)"
 #ssh-add -k ~/.ssh/id_rsa
