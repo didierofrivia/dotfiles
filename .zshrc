@@ -84,10 +84,13 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # execute local node modules bin
 export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
 alias npm-exec='PATH=$(npm bin):$PATH'
-alias karma='npm-exec karma'
-alias flow='npm-exec flow'
-alias eslint='npm-exec eslint'
-alias jest='npm-exec jest'
+
+# LSD https://github.com/Peltoche/lsd
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
 
 # Autocomplete fish-like zsh plugin
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
