@@ -70,6 +70,8 @@ export LANG=en_US.UTF-8
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+# eval "$(ssh-agent -s)"
+# ssh-add -k ~/.ssh/id_rsa
 
 # AutoJump
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
@@ -87,6 +89,7 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 
 # LSD https://github.com/Peltoche/lsd
 alias ls='lsd'
+alias lh= 'ls -lah'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
@@ -105,8 +108,22 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # 3scale Porta
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-export APICAST_REGISTRY_URL=https://apicast-staging.proda.3sca.net/policies
+#export APICAST_REGISTRY_URL=https://apicast-staging.proda.3sca.net/policies
+export APICAST_REGISTRY_URL=http://policies.apicast.io/latest/policies.json
 export UNICORN_WORKERS=8
-alias railss='rails s -b 0.0.0.0'
-#eval "$(ssh-agent -s)"
-#ssh-add -k ~/.ssh/id_rsa
+export RAILS_LOG_TO_STDOUT=1
+
+alias railss='bundle exec rails s -b 0.0.0.0'
+
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+
+# Apicurio
+alias apicurio='./distro/quickstart/target/apicurio-studio-*-SNAPSHOT/bin/standalone.sh -c standalone-apicurio.xml'
+
+# K8s
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+alias k="kubectl"
+
+# Go
+export PATH="$HOME/go/bin:$PATH"
