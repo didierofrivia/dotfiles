@@ -82,7 +82,7 @@ alias npm-exec='PATH=$(npm bin):$PATH'
 
 # LSD https://github.com/Peltoche/lsd
 alias ls='lsd'
-alias lh= 'ls -lah'
+alias ll='ls -lah'
 alias l='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
