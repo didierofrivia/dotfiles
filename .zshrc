@@ -94,25 +94,13 @@ alias lt='ls --tree'
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # OPENSSL
-export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/opt/openssl/lib/"
-export LDFLAGS="-L/usr/local/opt/openssl/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-
-# 3scale Porta
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-#export APICAST_REGISTRY_URL=https://apicast-staging.proda.3sca.net/policies
-export APICAST_REGISTRY_URL=http://policies.apicast.io/latest/policies.json
-export UNICORN_WORKERS=8
-export RAILS_LOG_TO_STDOUT=1
-
-alias railss='bundle exec rails s -b 0.0.0.0'
+#export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/opt/openssl/lib/"
+#export LDFLAGS="-L/usr/local/opt/openssl/lib"
+#export CPPFLAGS="-I/usr/local/opt/openssl/include"
+#export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home -v 11)
-
-# Apicurio
-alias apicurio='./distro/quickstart/target/apicurio-studio-*-SNAPSHOT/bin/standalone.sh -c standalone-apicurio.xml'
+#export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
 # K8s
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
