@@ -31,22 +31,20 @@ brew 'ag'
 brew 'lsd'
 
 ## Development
+brew 'go'
 brew 'node'
-brew 'rbenv'
-brew 'ruby-build'
 brew 'pv'
-brew 'qt5', link: true
-brew 'mysql@5.7', restart_service: true, link: true, conflicts_with: ['mysql']
-brew 'imagemagick@6', link: true
+#brew 'qt5', link: true
 brew 'postgresql'
 brew 'redis'
 brew 'autojump'
 brew 'exercism'
 brew 's3cmd'
+brew 'kubectl'
 brew 'openshift-cli'
 brew 'htop'
-brew 'elm'
-brew 'heroku/brew/heroku'
+brew 'jq'
+brew 'yq'
 
 
 # Apps
@@ -62,16 +60,14 @@ cask 'iterm2'
 cask 'shuttle'
 cask 'istat-menus'
 cask 'libreoffice'
-cask 'flux'
 
 ## Internet
 cask 'firefox'
-cask 'google-chrome'
+cask 'brave'
 cask 'transmit'
 cask 'slack'
-cask 'skype'
-cask 'blue-jeans'
 cask 'telegram'
+cask 'signal'
 
 ## Security
 cask 'gpg-suite'
@@ -80,15 +76,15 @@ cask 'tunnelblick'
 cask 'encryptr'
 cask 'spideroakone'
 cask 'keybase'
+cask 'nordvpn'
+cask 'mullvadvpn'
 
 ## Development
 cask 'docker'
-cask 'atom'
-cask 'rubymine'
+cask 'goland'
 cask 'sequel-pro'
 cask 'psequel'
 cask 'dash'
-cask 'chromedriver'
 
 ## Misc
 cask 'aerial'
