@@ -76,13 +76,6 @@ export LANG=en_US.UTF-8
 # AutoJump
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
 
-# rbenv
-# export PATH="$HOME/.rbenv/bin:$PATH"
- eval "$(rbenv init -)"
-
-# heroku
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # execute local node modules bin
 export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
 alias npm-exec='PATH=$(npm bin):$PATH'
