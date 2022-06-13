@@ -868,8 +868,6 @@ for app in "Activity Monitor" \
 	"Contacts" \
 	"Dock" \
 	"Finder" \
-	"Google Chrome" \
-	"Google Chrome Canary" \
 	"Mail" \
 	"Messages" \
 	"Photos" \
