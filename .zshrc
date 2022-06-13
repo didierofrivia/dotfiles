@@ -77,8 +77,8 @@ export LANG=en_US.UTF-8
 [[ -s `brew --prefix`/etc/autojump.zsh ]] && . `brew --prefix`/etc/autojump.zsh
 
 # execute local node modules bin
-export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
-alias npm-exec='PATH=$(npm bin):$PATH'
+#export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
+#alias npm-exec='PATH=$(npm bin):$PATH'
 
 # LSD https://github.com/Peltoche/lsd
 alias ls='lsd'
