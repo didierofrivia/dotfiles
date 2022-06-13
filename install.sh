@@ -62,8 +62,8 @@ fancy_echo "Setting Zsh as default..."
 chsh -s $(which zsh)
 
 # Set macOS preferences, originally from https://github.com/mathiasbynens/dotfiles
-fancy_echo "Set macOS preferences ..."
-source .macos
+# fancy_echo "Set macOS preferences ..."
+# source .macos
 
 # Install Oh-My-Zsh
 fancy_echo "Installing Oh My Zsh..."
