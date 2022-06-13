@@ -30,9 +30,10 @@
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
-  autocrlf = input
+	autocrlf = input
 	trustctime = false
 	precomposeunicode = false
+	editor = vim
 
 [color]
 	ui = auto
