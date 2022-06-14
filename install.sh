@@ -50,6 +50,12 @@ if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Install Rosetta for M1 Macs
+if [[ $(uname -m) == 'arm64' ]]; then
+  sudo softwareupdate -install-rosetta --agree-to-license
+fi
+
+
 # Update recipes
 brew update
 
