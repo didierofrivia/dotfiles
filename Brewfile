@@ -1,7 +1,7 @@
 # Taps
-tap 'caskroom/cask'
-tap 'caskroom/fonts'
-tap 'caskroom/versions'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 
 ## ZSH
@@ -51,7 +51,6 @@ brew 'yq'
 
 ## Media
 cask 'vlc'
-cask 'quik'
 cask 'spotify'
 
 ## Tools
@@ -63,7 +62,7 @@ cask 'libreoffice'
 
 ## Internet
 cask 'firefox'
-cask 'brave'
+cask 'brave-browser'
 cask 'transmit'
 cask 'slack'
 cask 'telegram'
@@ -75,7 +74,6 @@ cask 'viscosity'
 cask 'tunnelblick'
 cask 'encryptr'
 cask 'spideroakone'
-cask 'keybase'
 cask 'nordvpn'
 cask 'mullvadvpn'
 
@@ -83,7 +81,6 @@ cask 'mullvadvpn'
 cask 'docker'
 cask 'goland'
 cask 'sequel-pro'
-cask 'psequel'
 cask 'dash'
 
 ## Misc
@@ -96,8 +93,3 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
-
-## Fonts
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
