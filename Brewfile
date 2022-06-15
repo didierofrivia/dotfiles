@@ -76,12 +76,13 @@ cask 'bitwarden'
 cask 'spideroakone'
 cask 'nordvpn'
 cask 'mullvadvpn'
+cask 'micro-snitch'
+cask 'little-snitch'
 
 ## Development
 cask 'docker'
 cask 'goland'
 cask 'sequel-pro'
-cask 'dash'
 
 ## Misc
 cask 'aerial'
