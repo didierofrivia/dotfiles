@@ -110,5 +110,19 @@ alias lt='ls --tree'
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 alias k="kubectl"
 
+# gsed as sed
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+
+# Default Editor
+export EDITOR="vim"
+
+# Custom .bin for trying software
+export PATH="/Users/dd/.bin:$PATH"
+
 # Go
-export PATH="$HOME/go/bin:$PATH"
+#export GOPATH=$HOME/go
+#export GOROOT="$(brew --prefix golang)/libexec"
+#export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
+# GVM
+[[ -s "/Users/dd/.gvm/scripts/gvm" ]] && source "/Users/dd/.gvm/scripts/gvm"
