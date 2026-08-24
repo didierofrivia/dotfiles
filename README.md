@@ -6,13 +6,23 @@ Dotfiles managed with [GNU Stow](https://www.gnu.org/software/stow/), supporting
 
 ```
 dotfiles/
-├── git/          # .gitconfig, .gitignore_global, .gitmessage
-├── vim/          # .vimrc
-├── shell/        # .inputrc, .editorconfig
-├── zsh/          # .zshrc, .aliases
-├── macos/        # Brewfile, .macos, .mackup.cfg, themes/
-├── fedora/       # dnf.txt, setup.sh
-└── install.sh    # Cross-platform bootstrap
+├── common/                # stowed on both platforms
+│   ├── git/               #   .gitconfig, .gitignore_global, .gitmessage
+│   └── shell/             #   .inputrc, .editorconfig
+├── macos/                 # macOS only
+│   ├── vim/               #   .vimrc
+│   ├── zsh/               #   .zshrc, .aliases
+│   ├── Brewfile
+│   ├── install.sh
+│   └── themes/
+├── fedora/                # Fedora only
+│   ├── bash/              #   .bashrc, .bash_aliases
+│   ├── starship/          #   .config/starship.toml
+│   ├── alacritty/         #   .config/alacritty/alacritty.toml
+│   ├── dnf.txt
+│   ├── flatpaks.txt
+│   └── setup.sh
+└── install.sh             # Cross-platform bootstrap
 ```
 
 ## Installation
@@ -26,29 +36,22 @@ cd dotfiles
 ./install.sh
 ```
 
-The install script detects your OS, installs Stow if needed, stows all common packages, and runs the platform-specific setup.
+The install script detects your OS, installs Stow, stows the right packages, and runs platform-specific setup.
 
 ### Manual stow
 
 ```bash
-cd ~/dotfiles
-stow -t ~ git vim shell zsh
+# Common
+stow -d common -t ~ git shell
+
+# macOS
+stow -d macos -t ~ vim zsh
+
+# Fedora
+stow -d fedora -t ~ bash starship alacritty
 ```
 
-To remove a package: `stow -D -t ~ <package>`
-
-### macOS prerequisites
-
-1. Install Xcode Command Line Tools: `xcode-select --install`
-2. Install [Homebrew](https://brew.sh)
-
-### Fedora
-
-```bash
-cd ~/dotfiles
-./fedora/setup.sh   # installs base packages from dnf.txt
-stow -t ~ git vim shell zsh
-```
+To remove a package: `stow -D -d <dir> -t ~ <package>`
 
 ## Acknowledgements
 
