@@ -2,7 +2,6 @@
 set -e
 
 DOTFILES="$(cd "$(dirname "$0")" && pwd)"
-STOW_PACKAGES="git vim shell zsh"
 
 detect_os() {
   case "$(uname -s)" in
@@ -31,18 +30,18 @@ if ! command -v stow >/dev/null 2>&1; then
 fi
 
 echo "Stowing common packages..."
-cd "$DOTFILES"
-for pkg in $STOW_PACKAGES; do
-  echo "  -> $pkg"
-  stow -t "$HOME" "$pkg"
-done
+stow -d "$DOTFILES/common" -t "$HOME" git shell
 
 case "$OS" in
   macos)
+    echo "Stowing macOS packages..."
+    stow -d "$DOTFILES/macos" -t "$HOME" vim zsh
     echo "Running macOS setup..."
     sh "$DOTFILES/macos/install.sh"
     ;;
   fedora)
+    echo "Stowing Fedora packages..."
+    stow -d "$DOTFILES/fedora" -t "$HOME" bash starship alacritty
     echo "Running Fedora setup..."
     sh "$DOTFILES/fedora/setup.sh"
     ;;
