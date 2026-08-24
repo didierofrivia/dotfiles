@@ -45,14 +45,8 @@ alias gci="git pull --rebase && rake && git push"
 # Bundler
 alias b="bundle"
 
-# Tests and Specs
-alias t="ruby -I test"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias m="migrate"
-alias rk="rake"
-alias s="rspec"
+# K8s
+alias k="kubectl"
 
 # misc
 ## Flush Directory Service cache
