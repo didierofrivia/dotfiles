@@ -53,7 +53,7 @@ source $HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras github npm autojump zsh-autosuggestions)
+plugins=(git git-extras github npm autojump)
 
 # Activate Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
@@ -84,18 +84,10 @@ export LANG=en_US.UTF-8
 #export PATH="$(npm bin):/Users/dd/.npm-packages/bin/:$PATH"
 #alias npm-exec='PATH=$(npm bin):$PATH'
 
-# LSD https://github.com/Peltoche/lsd
-alias ls='lsd'
-alias ll='ls -lah'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
-
 # NVM
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # OPENSSL
 #export LIBRARY_PATH="$LIBRARY_PATH:/usr/local/opt/openssl/lib/"
@@ -103,12 +95,8 @@ alias lt='ls --tree'
 #export CPPFLAGS="-I/usr/local/opt/openssl/include"
 #export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
 
-# Java
-#export JAVA_HOME=$(/usr/libexec/java_home -v 11)
-
 # K8s
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-alias k="kubectl"
 
 # gsed as sed
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
@@ -117,7 +105,11 @@ export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 export EDITOR="vim"
 
 # Custom .bin for trying software
-export PATH="/Users/dd/.bin:$PATH"
+export PATH="/Users/$USER/.bin:$PATH"
+export PATH="/Users/$USER/.local/bin:$PATH"
+
+# Podman
+export BUILDX_BUILDER=buildx-autoload
 
 # Go
 #export GOPATH=$HOME/go
@@ -125,4 +117,4 @@ export PATH="/Users/dd/.bin:$PATH"
 #export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # GVM
-[[ -s "/Users/dd/.gvm/scripts/gvm" ]] && source "/Users/dd/.gvm/scripts/gvm"
+[[ -s "/Users/$USER/.gvm/scripts/gvm" ]] && source "/Users/$USER/.gvm/scripts/gvm"
