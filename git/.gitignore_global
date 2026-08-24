@@ -1,3 +1,5 @@
-mackup/
 .DS_Store
+*.swp
+*.swo
+*~
 .idea/
