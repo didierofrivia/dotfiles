@@ -1,0 +1,14 @@
+git
+neovim
+bash-completion
+fzf
+ripgrep
+fd-find
+zoxide
+curl
+wget
+xsel
+jq
+yq
+htop
+stow
