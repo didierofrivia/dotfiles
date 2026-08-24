@@ -31,14 +31,13 @@ brew 'ag'
 brew 'lsd'
 
 ## Development
-brew 'go'
+brew 'rust'
 brew 'node'
 brew 'pv'
 #brew 'qt5', link: true
 brew 'postgresql'
 brew 'redis'
 brew 'autojump'
-brew 'exercism'
 brew 's3cmd'
 brew 'kubectl'
 brew 'openshift-cli'
@@ -50,43 +49,32 @@ brew 'yq'
 # Apps
 
 ## Media
-cask 'vlc'
-cask 'spotify'
 
 ## Tools
 cask 'alfred'
 cask 'iterm2'
-cask 'shuttle'
 cask 'istat-menus'
 cask 'libreoffice'
 
 ## Internet
-cask 'firefox'
-cask 'brave-browser'
-cask 'transmit'
+cask 'vivaldi'
 cask 'slack'
-cask 'telegram'
 cask 'signal'
 
 ## Security
 cask 'gpg-suite'
-cask 'viscosity'
 cask 'tunnelblick'
 cask 'bitwarden'
 cask 'spideroakone'
-cask 'nordvpn'
 cask 'mullvadvpn'
 cask 'micro-snitch'
 cask 'little-snitch'
 
 ## Development
 cask 'docker'
-cask 'goland'
-cask 'sequel-pro'
+cask 'podman'
 
 ## Misc
-cask 'aerial'
-cask 'spectacle'
 
 ## Quicklook
 cask 'qlcolorcode'
