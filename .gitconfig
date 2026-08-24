@@ -2,7 +2,7 @@
   aa = add --all
   ap = add --patch
   ca = commit --amend
-  ci = commit -v -S
+  ci = commit -v -S -s
   co = checkout
   co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
   create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
@@ -77,14 +77,15 @@
   
 [commit]
   template = ~/.gitmessage
+  gpgsign = true
 
 [fetch]
   prune = true
 
 [user]
   name = dd di cesare
-  email = didi@posteo.net
-	signingkey = [REPLACE_WITH_KEY]
+  email = 4183971+didierofrivia@users.noreply.github.com
+  signingkey = [REPLACE_WITH_KEY]
 
 # URL shorthands
 
@@ -104,7 +105,7 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 [credential]
-	helper = osxkeychain
+	helper = manager
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
