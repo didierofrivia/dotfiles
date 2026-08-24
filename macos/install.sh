@@ -7,25 +7,6 @@ fancy_echo() {
   printf "\n$fmt\n" "$@"
 }
 
-append_to_zshrc() {
-  local text="$1" zshrc
-  local skip_new_line="${2:-0}"
-
-  if [ -w "$HOME/.zshrc.local" ]; then
-    zshrc="$HOME/.zshrc.local"
-  else
-    zshrc="$HOME/.zshrc"
-  fi
-
-  if ! grep -Fqs "$text" "$zshrc"; then
-    if [ "$skip_new_line" -eq 1 ]; then
-      printf "%s\n" "$text" >> "$zshrc"
-    else
-      printf "\n%s\n" "$text" >> "$zshrc"
-    fi
-  fi
-}
-
 fancy_echo "OHAI! Let's setup your mac, shall we?"
 
 cat << "EOF"
@@ -61,7 +42,7 @@ brew update
 
 # Install deps with bundle (listed in Brewfile)
 brew tap homebrew/bundle
-brew bundle
+brew bundle --file="$(dirname "$0")/Brewfile"
 
 # Make ZSH the default shell environment
 fancy_echo "Setting Zsh as default..."
