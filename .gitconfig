@@ -83,7 +83,7 @@
   prune = true
 
 [user]
-  name = dd di cesare
+  name = dd
   email = 4183971+didierofrivia@users.noreply.github.com
   signingkey = [REPLACE_WITH_KEY]
 
@@ -105,9 +105,14 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 [credential]
-	helper = manager
+  helper = manager
+
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[init]
+	defaultBranch = main
