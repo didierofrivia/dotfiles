@@ -33,7 +33,7 @@
 	autocrlf = input
 	trustctime = false
 	precomposeunicode = false
-	editor = vim
+	editor = nvim
 
 [color]
 	ui = auto
