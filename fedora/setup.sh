@@ -26,28 +26,17 @@ fi
 
 echo "Installing NVM..."
 if [ ! -d "$HOME/.nvm" ]; then
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.7/install.sh | bash
 fi
 
 echo "Installing GVM..."
 if [ ! -d "$HOME/.gvm" ]; then
-  bash < <(curl -sS https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+  curl -fsSL gvm.run/install.sh | bash
 fi
 
 echo "Installing lazydocker..."
 if ! command -v lazydocker >/dev/null 2>&1; then
   curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
-fi
-
-echo "Setting up LazyVim..."
-if [ ! -d "$HOME/.config/nvim" ]; then
-  git clone https://github.com/LazyVim/starter "$HOME/.config/nvim"
-  rm -rf "$HOME/.config/nvim/.git"
-fi
-
-echo "Installing JetBrains Mono font..."
-if ! fc-list | grep -qi "JetBrains Mono"; then
-  sudo dnf install -y jetbrains-mono-fonts
 fi
 
 echo "Fedora setup complete."

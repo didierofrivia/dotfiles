@@ -1,7 +1,4 @@
 com.vivaldi.Vivaldi
 org.signal.Signal
 com.vscodium.codium
-com.getpostman.Postman
-com.protonvpn.www
-ch.protonmail.protonmail-bridge
-io.github.nickvergessen.qobuz-desktop
+com.blitzfc.qbz
