@@ -12,3 +12,6 @@ jq
 yq
 htop
 stow
+openssl
+openssl-devel
+cmake
